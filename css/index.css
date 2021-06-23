@@ -17,10 +17,9 @@ hr {
 .scrollToTop:hover {
 	cursor: pointer;
 }
-
-.body {
+/* .body {
 	margin: 0 1em;
-}
+} */
 #body, .header, .header #nav, #welcome {
 	display: flex;
 }
@@ -29,6 +28,7 @@ hr {
 	justify-content: space-evenly;
 }
 .header {
+	margin: 0 1em;
 	z-index: 7;
 	height: 5em;
 	flex-direction: row;
@@ -104,6 +104,7 @@ hr {
 	text-shadow: 2px 2px black;
 }
 .content {
+	margin: 0 1em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -148,6 +149,9 @@ hr {
 	justify-content: space-between;
 	flex-direction: row;
 	max-width: 75em;
+}
+.overview-content:not(:first-child) {
+	margin-top: 4em;
 }
 .overview-image-container {
 	margin-right: 1.5em;
@@ -253,4 +257,15 @@ hr {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.contact-info {
+	width: 100%;
+	text-align: center;
+}
+
+.footer {
+	width: 100%;
+	height: 5em;
+	background-color: #444444;
 }
