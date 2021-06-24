@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Allura&family=Benne&family=Roboto:wght@100;700&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,23 +17,35 @@
 <body  id="home" class="body">
 	<div class="header">
 		<div class="header-name">Summers Hill</div>
+		<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="side-nav-menu material-icons">menu</i></a>
 		<ul id="nav">
 			<li class="nav-item selected"><a href="#home">Home</a></li>
 			<li class="nav-item"><a href="#about">About</a></li>
 			<li class="nav-item"><a href="#overview">Overview</a></li>
 			<li class="nav-item"><a href="#gallery">Gallery</a></li>
-			<!-- <li class="nav-item"><a href="#reviews">Reviews</li> -->
+			<!-- NO REVIEWS YET
+			<li class="nav-item"><a href="#reviews">Reviews</li> -->
+
 			<li class="nav-item"><a href="#contact">Contact</a></li>
 			<li id="nav-book-now"><a href="#">Book Now</a></li>
 		</ul>
 	</div>
-	<!-- POSSIBLE HIDDEN HAMBURGER MENU ON SCROLL
-		 <div class="scroll-header">
-		<p>WHAT UP</p>
-	</div> -->
+	<ul class="sidenav" id="mobile-demo">
+		<li class="nav-item-header">Summers Hill<i class="side-nav-close sidenav-close material-icons">clear</i></li>
+		<li class="nav-item"><a class="sidenav-close" href="#home">Home</a></li>
+		<li class="nav-item"><a class="sidenav-close" href="#about">About</a></li>
+		<li class="nav-item"><a class="sidenav-close" href="#overview">Overview</a></li>
+		<li class="nav-item"><a class="sidenav-close" href="#gallery">Gallery</a></li>
+		<!-- NO REVIEWS YET
+		<li class="nav-item"><a class="sidenav-close" href="#reviews">Reviews</li> -->
+
+		<li class="nav-item"><a class="sidenav-close" href="#contact">Contact</a></li>
+		<li class="nav-item"><a class="sidenav-close" href="#">Book Now</a></li>
+	  </ul>
+	  
 	<div class="content">
 		<section id="welcome">
-			<p class="welcome-sign">Our home is your home</p>
+			<p class="welcome-sign">Stay in the vineyard, not in the neighborhood</p>
 		</section>
 		<hr style="margin: 5em auto;"/>
 		<section id="about">
@@ -54,18 +69,19 @@
 				</div>
 		   </div>
 		   <div class="overview-content">        
-			<div class="overview-text">
-				<p>Bacon ipsum dolor amet fatback tri-tip biltong capicola shoulder leberkas. Salami corned beef landjaeger shank pork belly strip steak. Doner porchetta kevin shoulder chuck pork belly venison. Kevin tri-tip bacon shankle, sausage ham ribeye strip steak. Shank ribeye sausage, frankfurter rump biltong pig picanha meatloaf capicola t-bone pork loin burgdoggen. Chislic ham hock frankfurter picanha pork meatball, pastrami doner kevin short loin t-bone. Capicola meatloaf corned beef boudin pig, rump jowl venison spare ribs sirloin swine flank alcatra jerky frankfurter.</p>
-			</div>
-			<div class="overview-image-container">
-				<img src="./lib//assets/image1.jpg" class="overview-image"/>
-			</div>
-	   </div>
+				<div class="overview-text">
+					<p>Bacon ipsum dolor amet fatback tri-tip biltong capicola shoulder leberkas. Salami corned beef landjaeger shank pork belly strip steak. Doner porchetta kevin shoulder chuck pork belly venison. Kevin tri-tip bacon shankle, sausage ham ribeye strip steak. Shank ribeye sausage, frankfurter rump biltong pig picanha meatloaf capicola t-bone pork loin burgdoggen. Chislic ham hock frankfurter picanha pork meatball, pastrami doner kevin short loin t-bone. Capicola meatloaf corned beef boudin pig, rump jowl venison spare ribs sirloin swine flank alcatra jerky frankfurter.</p>
+				</div>
+				<div class="overview-image-container">
+					<img src="./lib//assets/image1.jpg" class="overview-image overview-image-small"/>
+				</div>
+	   		</div>
 			<div class="overview-content">        
 				<div class="overview-image-container">
 					<img src="./lib//assets/image3.jpg" class="overview-image"/>
 				</div>
 				<div class="overview-text">
+					<!-- PERHAPS WHAT TO DO IN THE AREA -->
 					<p>Bacon ipsum dolor amet fatback tri-tip biltong capicola shoulder leberkas. Salami corned beef landjaeger shank pork belly strip steak. Doner porchetta kevin shoulder chuck pork belly venison. Kevin tri-tip bacon shankle, sausage ham ribeye strip steak. Shank ribeye sausage, frankfurter rump biltong pig picanha meatloaf capicola t-bone pork loin burgdoggen. Chislic ham hock frankfurter picanha pork meatball, pastrami doner kevin short loin t-bone. Capicola meatloaf corned beef boudin pig, rump jowl venison spare ribs sirloin swine flank alcatra jerky frankfurter.</p>
 				</div>
 		   </div>
@@ -162,6 +178,7 @@
 		</section> -->
 		<hr />
 		<section id="contact">
+			<!-- GOOGLE MAPS API -->
 			<p>Bacon ipsum dolor amet pastrami buffalo t-bone ham hock shankle short ribs boudin short loin ribeye, beef ribs ground round. Kielbasa turkey pork loin, ball tip fatback pig drumstick buffalo capicola pork belly. Sirloin fatback beef burgdoggen, short loin pork tongue. Salami landjaeger tongue brisket corned beef pancetta meatloaf. Tongue ball tip beef ribs, turkey prosciutto ham hock burgdoggen pork belly pastrami pork loin bresaola.</p>
 			<div class="contact-info">
 				<p>Email: <span>email goes here</span></p>
@@ -179,9 +196,9 @@
 <script src="https://kit.fontawesome.com/b9767f36ed.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script>
-	
 	let navParent = $('#nav');
 	let lastKnownScrollPosition = 0;
 	let ticking = false;

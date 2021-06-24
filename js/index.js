@@ -1,3 +1,6 @@
+$(document).ready(function(){
+	$('.sidenav').sidenav();
+  });
 // function bodyJs() {
 // 	let navParent = $('#nav');
 	
