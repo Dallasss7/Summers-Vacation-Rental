@@ -77,6 +77,12 @@
 	.sidenav .nav-item a {
 		font-size: large;
 	}
+	.sidenav .nav-book-now {
+		background: #008B8B;
+	}
+	.sidenav .nav-book-now a {
+		color: #fff;
+	}
 	.content {
 		margin: 0 1em;
 		display: flex;
@@ -249,11 +255,16 @@
 		width: 100%;
 		text-align: center;
 	}
-
 	.footer {
 		width: 100%;
 		height: 5em;
 		background-color: #444444;
+		text-align: center;
+	}
+	.footer-social-media {
+		font-family: 'Benne', serif;
+		font-size: 20px;
+		color: #fff;
 	}
 }
 
