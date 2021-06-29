@@ -55,9 +55,6 @@
 			
 			<p>Chicken short ribs shoulder frankfurter short loin andouille est. Jowl aute prosciutto, rump incididunt mollit hamburger drumstick landjaeger. Capicola dolore irure, short ribs venison tenderloin in kielbasa salami swine boudin alcatra prosciutto chicken. Irure shank ullamco culpa cow lorem ground round porchetta reprehenderit leberkas ribeye. Drumstick corned beef flank chicken magna.</p>
 		</section>
-		<div class="icon-container">
-			<i class="fas fa-chevron-up scrollToTop"></i>
-		</div>
 		<hr />
 		<section id="overview">
 			<div class="overview-content">        
@@ -86,9 +83,6 @@
 				</div>
 		   </div>
 		</section>
-		<div class="icon-container">
-			<i class="fas fa-chevron-up scrollToTop"></i>
-		</div>
 		<hr/>
 		<section id="gallery">
 			<!-- Slideshow container -->
@@ -169,9 +163,6 @@
 
 			</div>
 		</section>
-		<div class="icon-container">
-			<i class="fas fa-chevron-up scrollToTop"></i>
-		</div>
 		<!-- <hr />
 		<section id="reviews">
 			<p>review</p>
@@ -187,8 +178,10 @@
 			</div>
 			
 		</section>
-		<div class="icon-container">
-			<i class="fas fa-chevron-up scrollToTop"></i>
+		<div id="toTop" class="icon-container">
+			<div class="scrollBox">
+				<i class="fas fa-chevron-up scrollToTop"></i>
+			</div>
 		</div>
 	</div>
 	<section class="footer">
@@ -215,6 +208,12 @@
 	// THROTTLE FOR THE SCROLL FUNCTIONALITY
 	document.addEventListener('scroll', function(e) {
 	lastKnownScrollPosition = window.scrollY;
+
+	if($(window).scrollTop() > 100) {
+			$('#toTop').fadeIn("slow");
+		} else if($(window).scrollTop() === 0) {
+			$('#toTop').fadeOut("slow");
+		}
 
 	if (!ticking) {
 		window.setTimeout(function() {
@@ -289,7 +288,6 @@
 				currLink.removeClass("selected");
 			}
 		});
-
 		/* POSSIBLE HIDDEN HAMBURGER MENU ON SCROLL */
 		// if ($(window).scrollTop() !== 0) {
 		// 	$(".scroll-header").fadeTo(100, 1);

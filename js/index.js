@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$('.sidenav').sidenav();
+	$('#toTop').hide();
   });
 // function bodyJs() {
 // 	let navParent = $('#nav');

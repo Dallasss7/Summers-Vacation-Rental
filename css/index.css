@@ -12,8 +12,21 @@
 		margin-top: 1em;
 		text-align: center;
 	}
-	.scrollToTop {
-		position: absolute;
+	#toTop {
+	    position: fixed;
+		bottom: 0;
+		right: 0;
+		margin: 0 2em 0 0;
+	}
+	.scrollBox {
+		width: 2.5em;
+		margin: 0 auto;
+		border-radius: 29px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 2em;
+		background-color: rgba(189,208,209,0.5);
 	}
 	.scrollToTop:hover {
 		cursor: pointer;
