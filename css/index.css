@@ -28,7 +28,7 @@
 		justify-content: center;
 		background-color: rgba(189,208,209,0.5);
 	}
-	.scrollToTop:hover {
+	.scrollBox:hover {
 		cursor: pointer;
 	}
 	/* .body {

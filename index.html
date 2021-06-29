@@ -225,15 +225,15 @@
 	}
 	});
 
-	$('.scrollToTop').click(function() {
+	$('.scrollBox').on("click", function() {
 		$(window).scrollTop(0);
 	})
 
 	if ($(window).width() >= 769) {
-		$('.scrollToTop').hover( function() {
-			$(this).data('bounce', true); bounce($(this));
+		$('.scrollBox').hover( function() {
+			$('.scrollToTop').data('bounce', true); bounce($('.scrollToTop'));
 		}, function() {
-			$(this).data('bounce', false);
+			$('.scrollToTop').data('bounce', false);
 		});
 	}
 
