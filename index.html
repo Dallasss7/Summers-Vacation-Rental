@@ -229,10 +229,13 @@
 		$(window).scrollTop(0);
 	})
 
-	$('.scrollToTop').hover( 
-		function() { $(this).data('bounce', true); bounce($(this));}, 
-		function() { $(this).data('bounce', false);
-	});
+	if ($(window).width() >= 769) {
+		$('.scrollToTop').hover( function() {
+			$(this).data('bounce', true); bounce($(this));
+		}, function() {
+			$(this).data('bounce', false);
+		});
+	}
 
 	function bounce($elem) {
 		$elem.effect('bounce', { times: 1, distance: 5 }, 500, function() {

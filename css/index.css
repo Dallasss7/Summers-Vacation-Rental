@@ -20,12 +20,12 @@
 	}
 	.scrollBox {
 		width: 2.5em;
+		height: 2.5em;
 		margin: 0 auto;
-		border-radius: 29px;
+		border-radius: 50%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 2em;
 		background-color: rgba(189,208,209,0.5);
 	}
 	.scrollToTop:hover {
