@@ -7,6 +7,10 @@
 		border: solid .5px gray;
 		margin: 3em auto 3em auto;
 	}
+	h1 {
+		font-family: 'Montserrat', sans-serif;
+		margin: 0 auto 1em auto;
+	}
 	.icon-container {
 		padding-bottom: 2em;
 		margin-top: 1em;
@@ -31,9 +35,6 @@
 	.scrollBox:hover {
 		cursor: pointer;
 	}
-	/* .body {
-		margin: 0 1em;
-	} */
 	#body, #welcome {
 		display: flex;
 	}
@@ -110,28 +111,31 @@
 		-ms-flex-align: center;
 		-webkit-align-items: center;
 		align-items: center;
-		background-image: url('../lib/assets/Tony Gambino Photography-1016.jpg');
+		background-image: url('../lib/assets/Tony Gambino Photography-1002.jpg');
 		background-repeat:no-repeat;
 		background-size:cover;
-		background-position:center;
+		background-position:bottom;
 		height: 25em;
 		border-radius: 10px;
 	}
 	.welcome-sign {
 		font-family: 'Allura', cursive;
 		color: #fff;
-		text-shadow: 0px -1px 0 #000, 0px -1px 0 #000, 0px 1px 0 #000, 0px 1px 0 #000;
+		font-weight: bolder;
 		font-size: xx-large;
-		/* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; */
+		text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 		left: 0;
 		position: absolute;
 		text-align: center;
-		top: 32%;
+		top: 22%;
 		width: 100%;
 		padding: 0 1em 0 1em;
 	}
-	#about {
+	#intro, #about, #overview, #contact {
 		text-align: center;
+	}
+	#intro {
+		margin: 1em auto auto auto;
 	}
 	#overview {
 		display: flex;
@@ -144,18 +148,20 @@
 		flex-direction: column;
 		align-items: center; 
 	}
-	.overview-content:not(:first-child) {
+	.overview-content:not(.no-margin-top) {
 		margin-top: 2em;
 	}
 	.overview-image {
 		height: 11em;
 		border-radius: 10px;
 	}
+	.not-mobile {
+		display: none;
+	}
 	.overview-text {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		text-align: center;
 	}
 	/* Slideshow container */
 	.slideshow-container {
@@ -258,9 +264,6 @@
 		display: flex;
 		flex-direction: column;
 	} */
-	#contact {
-		text-align: center;
-	}
 	.contact-info {
 		width: 100%;
 		text-align: center;
@@ -270,11 +273,16 @@
 		height: 5em;
 		background-color: #444444;
 		text-align: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding: 1em;
 	}
-	.footer-social-media {
-		font-family: 'Benne', serif;
-		font-size: 20px;
-		color: #fff;
+	.insta, .facebook {
+		width: 3em;
+	}
+	.insta {
+		margin-right: 1em;
 	}
 }
 
@@ -365,14 +373,23 @@
 		padding: 0;
 		top: 22%;
 	}
+	#intro {
+		margin: 2em auto auto auto;
+	}
 	.overview-image {
 		height: 22em;
+	}
+	.mobile {
+		display: none;
+	}
+	.not-mobile {
+		display: inline;
 	}
 	.overview-content {
 		flex-direction: row;
 		max-width: 75em;
 	}
-	.overview-content:not(:first-child) {
+	.overview-content:not(.no-margin-top) {
 		margin-top: 4em;
 	}
 	.overview-image-container-right {
@@ -381,8 +398,8 @@
 	.overview-image-container-left {
 		margin-left: 1.5em;
 	}
-	/* .contact-image-container {
-		flex-direction: row;
-	} */
+	.insta {
+		margin-right: 3em;
+	}
 
 }
